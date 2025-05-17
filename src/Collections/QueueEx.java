@@ -1,7 +1,6 @@
 package Collections;
 
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -13,6 +12,7 @@ public class QueueEx {
         q.add(30);
         q.add(40);
         q.add(50);
+
 
         System.out.println(q.peek());
         System.out.println(q);
