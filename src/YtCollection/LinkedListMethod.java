@@ -3,7 +3,7 @@ package YtCollection;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-public class LinkedListMethods {
+public class LinkedListMethod {
     public static void main(String[] args) {
 
         LinkedList<Integer> linkedList = new LinkedList<>();
