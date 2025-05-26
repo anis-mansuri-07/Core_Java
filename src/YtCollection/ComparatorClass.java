@@ -8,7 +8,8 @@ class StringLenghtComparator implements Comparator<Integer> {
 
     @Override
     public int compare(Integer s1, Integer s2) {
-        return s2 - s1;
+//        return s2 - s1;
+        return Double.compare(s1, s2);
         // Ascending means S1 should come first and Descending means S2 should come first
     }
 }
