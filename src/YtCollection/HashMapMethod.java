@@ -12,8 +12,10 @@ public class HashMapMethod {
         map.put(5, "PineApple");
         map.put(4, "WaterMelon");
 
+
         System.out.println(map.get(2));
         Set<Integer> keys = map.keySet();
+
         // output will be in ordered way of keys, means based on order on keys
         // you can put method key-set() on loop replacing set
         for (Integer i : keys) {
@@ -23,12 +25,14 @@ public class HashMapMethod {
         Set<Map.Entry<Integer, String>> entries = map.entrySet();
         for (Map.Entry<Integer, String> entry : entries) {
             System.out.println(entry.getKey() + " " + entry.getValue());
+
         }
 
         map.putIfAbsent(1, "Apple");
         System.out.println(map);
         map.replace(1, "Api");
         System.out.println(map);
+        System.out.println(map.getOrDefault(55, "ss"));
 
 /*
         this is for iterate over map and set get at map
@@ -37,7 +41,9 @@ public class HashMapMethod {
             entry.setValue(entry.getValue().toUpperCase());
         }
         System.out.println(map);
+
 */
+
 
     }
 }
