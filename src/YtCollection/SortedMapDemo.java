@@ -1,9 +1,6 @@
 package YtCollection;
 
-import java.util.Map;
-import java.util.Set;
-import java.util.SortedMap;
-import java.util.TreeMap;
+import java.util.*;
 
 class SortDemo {
     private int num;
@@ -26,12 +23,14 @@ class SortDemo {
 public class SortedMapDemo {
     public static void main(String[] args) {
 
-        SortedMap<String, Integer> map = new TreeMap<>();
+        SortedMap<String, Integer> map = new TreeMap<>(String::compareTo);
+//        SortedMap<String, Integer> map = new TreeMap<>(Comparator.reverseOrder()); for reverse
         map.put("Tree", 25);
         map.put("Guava", 66);
         map.put("Apple", 90);
         map.put("Design", 1);
         map.put("Ema", 1);
+
         System.out.println(map);
         System.out.println("First Key :" + map.firstKey());
         System.out.println("Last Key :" + map.lastKey());

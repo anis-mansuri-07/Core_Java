@@ -1,6 +1,5 @@
 package YtCollection;
 
-import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class CopyOnWriteArrayLists {
