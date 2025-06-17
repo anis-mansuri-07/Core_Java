@@ -1,0 +1,34 @@
+
+        1. this is for static block
+
+ Main File
+
+        Scanner sc = new Scanner(System.in);
+        AadhaarService aadhaarService = new AadhaarService();
+        PanService panService = new PanService();
+
+        System.out.println("Enter Aadhaar Number: ");
+        String aadhaarNumber = sc.nextLine();
+        AadhaarCard aadhaarCard = aadhaarService.getAadhaar(aadhaarNumber);
+
+        PanCard panCard = panService.getPan(aadhaarNumber);
+        if (panCard != null && aadhaarCard != null) {
+            System.out.println("Pan Details : " + panCard);
+            System.out.println("Aadhaar Details : " + aadhaarCard);
+        } else {
+            System.out.println("Data Not Found");
+        }
+
+ AadhaarService and PanService
+
+    map also static for both
+
+     static {
+            aadhaarMap.put("101", new AadhaarCard("101", "Mahesh", "Rakesh", "Agra"));
+            aadhaarMap.put("102", new AadhaarCard("102", "Ramesh", "Raju", "Delhi"));
+        }
+
+    static {
+                    panMap.put("ABC101", new PanCard("ABC101", "101", "Union Bank", "Stock, Crypto"));
+                    panMap.put("ABC102", new PanCard("ABC102", "102", "HDFC Bank", "Plot, Business"));
+                }
