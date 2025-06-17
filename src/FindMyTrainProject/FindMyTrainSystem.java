@@ -1,4 +1,4 @@
-package FindMyTrain;
+package FindMyTrainProject;
 
 import java.util.ArrayList;
 import java.util.HashMap;

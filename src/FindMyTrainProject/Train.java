@@ -1,4 +1,4 @@
-package FindMyTrain;
+package FindMyTrainProject;
 
 public class Train {
     private String trainId;

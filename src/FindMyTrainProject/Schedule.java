@@ -1,6 +1,4 @@
-package FindMyTrain;
-
-import java.time.LocalDateTime;
+package FindMyTrainProject;
 
 public class Schedule {
 
