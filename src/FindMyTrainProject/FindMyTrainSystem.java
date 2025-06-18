@@ -22,7 +22,7 @@ public class FindMyTrainSystem {
         schedules.add(schedule);
     }
 
-    public List<Schedule> findMyTrain(String startStationId, String endStationId) {
+    /*public List<Schedule> findMyTrain(String startStationId, String endStationId) {
         List<Schedule> res = new ArrayList<>();
         for (Schedule schedule : schedules) {
             if (schedule.getStation().getStationId().equalsIgnoreCase(startStationId)
@@ -31,6 +31,18 @@ public class FindMyTrainSystem {
             }
         }
         return res;
+    }*/
+
+
+    // Find Trains By Station Name
+    public List<Schedule> findMyTrainByStationName(String stationName) {
+        List<Schedule> trainList = new ArrayList<>();
+        for (Schedule station : schedules) {
+            if (station.getStation().getStationName().equalsIgnoreCase(stationName)) {
+                trainList.add(station);
+            }
+        }
+        return trainList;
     }
 
 }
