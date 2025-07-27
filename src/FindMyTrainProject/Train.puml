@@ -1,0 +1,76 @@
+@startuml
+class FindMyTrainProject.Schedule {
+- Train train
+- Station station
+- String arrivalTime
+- String departureTime
+- Platform platform
++ Train getTrain()
++ void setTrain(Train)
++ Station getStation()
++ void setStation(Station)
++ String getArrivalTime()
++ void setArrivalTime(String)
++ String getDepartureTime()
++ void setDepartureTime(String)
++ Platform getPlatform()
++ void setPlatform(Platform)
++ String toString()
+}
+
+
+class FindMyTrainProject.FindMyTrainApp {
++ {static} void main(String[])
+}
+
+class FindMyTrainProject.FindMyTrainSystem {
+- Map<String,Station> stations
+- Map<String,Train> trains
+- List<Schedule> schedules
++ void addStation(Station)
++ void addTrain(Train)
++ void addSchedule(Schedule)
++ List<Schedule> findMyTrainByStationName(String)
+}
+
+
+class FindMyTrainProject.Station {
+- String stationId
+- String stationName
+- List<Platform> platformList
++ String getStationId()
++ void setStationId(String)
++ String getStationName()
++ void setStationName(String)
++ List<Platform> getPlatformList()
++ void setPlatformList(List<Platform>)
++ String toString()
+}
+
+
+class FindMyTrainProject.Platform {
+- int platformNumber
+- Train train
++ int getPlatformNumber()
++ void setPlatformNumber(int)
++ Train getTrain()
++ void setTrain(Train)
++ String toString()
+}
+
+
+class FindMyTrainProject.Train {
+- String trainId
+- String trainName
+- String trainType
++ String getTrainId()
++ void setTrainId(String)
++ String getTrainName()
++ void setTrainName(String)
++ String getTrainType()
++ void setTrainType(String)
++ String toString()
+}
+
+
+@enduml

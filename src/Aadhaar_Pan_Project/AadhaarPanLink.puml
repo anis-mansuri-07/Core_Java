@@ -1,0 +1,54 @@
+@startuml
+class Aadhaar_Pan_Project.PanService {
+- Map<String,PanCard> panMap
++ void setPanMap(String,PanCard)
++ PanCard getPan(String)
+}
+
+
+class Aadhaar_Pan_Project.AadhaarCard {
+- String aadhaarNumber
+- String name
+- String fatherName
+- String address
++ String getAadhaarNumber()
++ void setAadhaarNumber(String)
++ String getName()
++ void setName(String)
++ String getFatherName()
++ void setFatherName(String)
++ String getAddress()
++ void setAddress(String)
++ String toString()
+}
+
+
+class Aadhaar_Pan_Project.PanCard {
+- String panNumber
+- String aadhaarNumber
+- String bankDetails
+- String investment
++ String getPanNumber()
++ void setPanNumber(String)
++ String getAadhaarNumber()
++ void setAadhaarNumber(String)
++ String getBankDetails()
++ void setBankDetails(String)
++ String getInvestment()
++ void setInvestment(String)
++ String toString()
+}
+
+
+class Aadhaar_Pan_Project.Pan_Aadhaar_Match_App {
++ {static} void main(String[])
+}
+
+class Aadhaar_Pan_Project.AadhaarService {
+- Map<String,AadhaarCard> aadhaarMap
++ void setAadhaarMap(String,AadhaarCard)
++ AadhaarCard getAadhaar(String)
+}
+
+
+@enduml
