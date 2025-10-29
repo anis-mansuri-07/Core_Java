@@ -43,9 +43,6 @@ A small project demonstrating **data validation and mapping** logic in Java.
 ### 🔸 FindMyTrainProject
 A console-based project simulating a simple **train management or search system**, reinforcing object interaction and data management concepts.
 
-### 🔸 YtCollection
-Collection-related examples inspired by tutorials and practical use cases.
-
 ---
 
 ## 🛠️ Tools & Technologies
